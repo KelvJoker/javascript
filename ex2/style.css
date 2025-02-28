@@ -1,0 +1,98 @@
+/* Estilo Zenless Zone Zero */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background-color: #121212; /* Fundo escuro */
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  max-width: 500px;
+  margin: auto;
+  animation: neonGlow 2s infinite alternate;
+}
+
+h1 {
+  color: #00ffff; /* Azul neon */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+input[type="number"] {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  background: #0f0f13;
+  color: #00ffff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.sexo label {
+  display: inline-block;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  background: #ff007f; /* Rosa neon */
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.4em;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.sucesso {
+  color: #00ffcc;
+  text-shadow: 0 0 15px #00ffcc;
+}
+
+.erro {
+  color: #ff007f;
+  text-shadow: 0 0 15px #ff007f;
+}
+
+img {
+  margin-top: 40px;
+  width: 600px;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 30px #00ffff;
+}
+
+@keyframes neonGlow {
+  from {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+  }
+}
